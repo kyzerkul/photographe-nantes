@@ -38,9 +38,9 @@ export default function RootLayout({
             })
           }}
         />
-        <header className="py-6 px-4 sm:px-6 lg:px-8 border-b border-gray-200">
+        <header className="py-8 px-4 sm:px-6 lg:px-8 border-b border-gray-200 shadow-sm">
           <nav className="flex justify-center items-center">
-            <ul className="flex space-x-6 sm:space-x-8">
+            <ul className="flex space-x-6 sm:space-x-10"> {/* Increased spacing between nav items */}
               <li>
                 <Link href="/" className="hover:text-accent transition-colors">
                   Accueil
@@ -69,11 +69,11 @@ export default function RootLayout({
             </ul>
           </nav>
         </header>
-        <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12"> {/* Increased py */}
           {children}
         </main>
-        <footer className="py-6 px-4 sm:px-6 lg:px-8 text-center border-t border-gray-200">
-          <p className="text-sm">
+        <footer className="py-8 px-4 sm:px-6 lg:px-8 text-center border-t border-gray-200"> {/* Increased py */}
+          <p className="text-sm text-gray-600"> {/* Slightly lighter footer text */}
             © {currentYear} Moments Sublimes Photographie. Tous droits réservés.
           </p>
           {/* Placeholder for social media icons if needed later */}
