@@ -21,39 +21,6 @@ export default function HomePage() {
     "telephone": "+33612345678",
     "openingHours": "Mo-Fr 09:00-18:00",
     "url": "https://www.votredomaine.com",
-    "image": "https://www.votredomaine.com/images/logo-photographe.jpg",
-    "sameAs": [
-      "https://www.instagram.com/moments_sublimes_photo/"
-    ]
-  };
-
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
-import Image from 'next/image';
-
-export const metadata: Metadata = {
-  title: "Photographe Mariage Nantes - Moments Sublimes Photographie",
-  description: "Photographe de mariage professionnel à Nantes. Capturer vos moments précieux avec créativité et passion. Services de photographie de mariage et d'engagement.",
-};
-
-export default function HomePage() {
-  const localBusinessJsonLd = {
-    "@context": "https://schema.org",
-    "@type": ["Photographer", "LocalBusiness"],
-    "name": "Moments Sublimes Photographie",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "123 Rue de la Photographie",
-      "addressLocality": "Nantes",
-      "postalCode": "44000",
-      "addressCountry": "FR"
-    },
-    "telephone": "+33612345678",
-    "openingHours": "Mo-Fr 09:00-18:00",
-    "url": "https://www.votredomaine.com",
     "image": "https://www.votredomaine.com/images/logo-photographe.jpg", // This is for Schema, not displayed
     "sameAs": [
       "https://www.instagram.com/moments_sublimes_photo/"
@@ -66,7 +33,7 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
       />
-      
+
       {/* Hero Section */}
       <section className="hero text-center py-12 md:py-20">
         <div className="mb-8">
