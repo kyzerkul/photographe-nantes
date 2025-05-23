@@ -1,3 +1,4 @@
+import React from 'react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export default function ContactPage() {
   ];
 
   return (
-    <>
+    <React.Fragment>
       <h1 className="text-3xl sm:text-4xl font-bold text-accent mb-8 text-center">Contactez-moi</h1>
       <p className="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto">
         Vous avez un projet de mariage à Nantes ou dans les environs ? Vous aimez mon approche et mon style photographique ? N'hésitez pas à me contacter pour me parler de vous, de vos envies, et pour vérifier mes disponibilités. Je serai ravi d'échanger avec vous et de voir comment nous pouvons ensemble créer les souvenirs de votre journée exceptionnelle.
@@ -51,6 +52,6 @@ export default function ContactPage() {
       <p className="mt-12 text-center text-lg text-gray-700">
         Au plaisir de vous lire et, je l'espère, de vous rencontrer !
       </p>
-    </>
+    </React.Fragment>
   );
 }
